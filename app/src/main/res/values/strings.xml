@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyCV2</string>
+    <string name="titleBiodata"><u>Biodata</u></string>
+    <string name="titleContactMe"><u>Kontak</u></string>
+    <string name="titleSkills"><u>Skills</u></string>
+    <string name="titleBahasa"><u>Bahasa</u></string>
+    <string name="titleProfil"><u>Profil</u></string>
+    <string name="titlePendidikan"><u>Pendidikan</u></string>
+    <string name="titlePengalamanKerja"><u>Pengalaman Kerja</u></string>
+    <string name="titleSertifikat"><u>Sertifikat</u></string>
+</resources>

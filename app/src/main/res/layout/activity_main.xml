@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:background="@color/first"
+        tools:ignore="MissingConstraints">
+
+        <!-- Foto Profil -->
+        <ImageView
+            android:id="@+id/foto_profil"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="32dp"
+            android:src="@drawable/profile"/>
+
+        <!-- Biodata -->
+        <TextView
+            android:id="@+id/title_biodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16dp"
+            android:layout_below="@id/foto_profil"
+            android:layout_marginBottom="8dp"
+            android:text="@string/titleBiodata"
+            android:fontFamily="@font/grandstandermedium"/>
+
+        <LinearLayout
+            android:id="@+id/biodata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/title_biodata">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="Nama: Mosses Ara'al De Sela"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="Usia: 22 Tahun"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="Alamat: Kabupaten Bekasi"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="Gender: Pria"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="Status: Lajang"
+                android:fontFamily="@font/grandstanderlight"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/biodata"
+            android:background="@color/second"/>
+
+        <!-- Contact Me -->
+        <TextView
+            android:id="@+id/title_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16dp"
+            android:layout_below="@+id/line1"
+            android:layout_marginBottom="8dp"
+            android:text="@string/titleContactMe"
+            android:fontFamily="@font/grandstandermedium"/>
+
+        <LinearLayout
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/title_contact"
+            android:layout_marginStart="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/whatsapp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="6dp"
+                    android:text="6281932701410"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/instagram"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="6dp"
+                    android:text="@mossesara_al"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/gmail"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="6dp"
+                    android:text="araal2612@gmail.com"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/contact"
+            android:background="@color/second"/>
+
+        <!-- Skills -->
+        <TextView
+            android:id="@+id/title_skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16dp"
+            android:layout_below="@+id/line2"
+            android:layout_marginBottom="8dp"
+            android:text="@string/titleSkills"
+            android:fontFamily="@font/grandstandermedium"/>
+
+        <LinearLayout
+            android:id="@+id/skills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_skills"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- Android Studio"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- GITHUB"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- Layout Android"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- JAVA"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- Kotlin"
+                android:fontFamily="@font/grandstanderlight"/>
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/skills"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/second"/>
+
+        <!-- Languages -->
+        <TextView
+            android:id="@+id/title_bahasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/line3"
+            android:text="@string/titleBahasa"
+            android:fontFamily="@font/grandstandermedium"/>
+
+        <LinearLayout
+            android:id="@+id/bahasa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/title_bahasa"
+            android:layout_marginStart="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/indonesia"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="6dp"
+                    android:text="Indonesia (Native)"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/uk"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="8sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="6dp"
+                    android:text="English (Fluent)"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:background="@color/second"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Nama & Posisi -->
+        <LinearLayout
+            android:id="@+id/nama_posisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/first"
+            android:orientation="vertical"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mosses Ara'al De Sela"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/indieflower"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Junior Mobile Developer"
+                android:textSize="13dp"
+                android:fontFamily="@font/indieflower"/>
+        </LinearLayout>
+
+        <!-- Profil -->
+        <LinearLayout
+            android:id="@+id/profil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama_posisi"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/titleProfil"
+                android:fontFamily="@font/grandstandermedium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="Saya adalah mahasiswa jurusan Teknik Informatika aktif di Universitas Pelita Bangsa. Saya orang yang berdedikasi dan saya suka belajar dari kesalahan."
+                android:fontFamily="@font/grandstanderlight"/>
+        </LinearLayout>
+
+        <View
+            android:id="@id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/profil"
+            android:layout_marginBottom="20dp"
+            android:background="@color/first"/>
+
+        <!-- Pendidikan -->
+        <LinearLayout
+            android:id="@+id/pendidikan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/titlePendidikan"
+                android:fontFamily="@font/grandstandermedium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- SMKN 1 Cikarang Barat - Teknik Komputer dan Jaringan (2016-2019)"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- BLK Bekasi - Network Professional (2019)"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- BLK Bandung - Mould Maker (2019)"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- BuildWithAngga - Fullstack Website Developer (2021)"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- Universitas Pelita Bangsa - Teknik Informatika (2022-Sekarang)"
+                android:fontFamily="@font/grandstanderlight"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/pendidikan"
+            android:layout_marginBottom="20dp"
+            android:background="@color/first"/>
+
+        <!-- Pengalaman Kerja-->
+        <LinearLayout
+            android:id="@+id/pengalamanKerja"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line4"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/titlePengalamanKerja"
+                android:fontFamily="@font/grandstandermedium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- Technical Support IT di PT Inti Ganda Perdana (2020-Sekarang)"
+                android:fontFamily="@font/grandstanderlight"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/pengalamanKerja"
+            android:layout_marginBottom="20dp"
+            android:background="@color/first"/>
+
+        <LinearLayout
+            android:id="@+id/sertifikat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/titleSertifikat"
+                android:fontFamily="@font/grandstandermedium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- Pelatihan Softskill - Cerah Bekasi"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- Network Professional - BLK Bekasi"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- Mould Maker - BLK Bandung"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- Bahasa Inggris untuk Perkantoran - CAKAP"
+                android:fontFamily="@font/grandstanderlight"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                android:layout_marginBottom="3dp"
+                android:text="- Full Stack Web Developer - BuildWithAngga"
+                android:fontFamily="@font/grandstanderlight"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
